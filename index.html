@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbullying</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-text">
+            <h1>Cyberbullying</h1>
+            <p>Conscientização é o primeiro passo para a mudança!</p>
+        </div>
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="tel:+5511999999999">Ligue para 190</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>O que é Cyberbullying?</h2>
+            <p>Cyberbullying é a prática de usar tecnologia para assediar, intimidar ou ofender outra pessoa. É importante que todos nós estejamos atentos e combatamos essa prática.</p>
+        </section>
+        
+        <section>
+            <h2>    Conscientização</h2>
+            <div class="image-container">
+                <img src="https://media.istockphoto.com/id/1369689362/pt/foto/asian-teenage-boy-sitting-at-stair-covering-his-face-with-hands-face-down-holding-smartphone.jpg?s=170667a&w=is&k=20&c=khRNRdgVShfn3pT6dCWo5pFwf3rmbXilbJ2T19NQ3X4=" alt="Pessoa sofrendo cyberbullying" onclick="openModal(this)">
+                <img src="https://img.freepik.com/fotos-premium/conscientizacao-sobre-cyberbullying_933496-3398.jpg" alt="Pessoa cometendo cyberbullying" onclick="openModal(this)">
+            </div>
+        </section>
+
+        <section>
+            <h2>Prevenção</h2>
+            <h3>Medidas Preventivas</h3>
+            <p>Dicas e ações que podem ser adotadas para evitar o cyberbullying:</p>
+            <ul>
+                <li>Fale sobre cyberbullying com amigos e familiares.</li>
+                <li>Use configurações de privacidade nas redes sociais.</li>
+                <li>Denuncie comportamentos abusivos.</li>
+                <li>Seja respeitoso e gentil online.</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    <footer>
+        <p>Links úteis:</p>
+        <div class="container">
+            <a href="https://www.internetmatters.org/pt/issues/cyberbullying/deal-with-it/#:~:text=Procure%20aconselhamento%20para%20apoio%20ao%20cyberbullying&text=Se%20precisar%20de%20ajuda%20para,e%20a%20Mente%20tenha%20algum%20conselho." class="social-link">Recursos de Apoio.</a>
+            <a href="https://www.abp.org.br/contra-o-bullying" class="social-link">Campanha contra o Cyberbullying.</a>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

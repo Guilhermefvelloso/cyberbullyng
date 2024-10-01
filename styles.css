@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url('https://thumbs.dreamstime.com/b/conceito-de-cyberbullying-com-pessoa-masculina-encapu%C3%A7ado-sem-cara-133406104.jpg'); /* Coloque o caminho da sua imagem aqui */
+    background-size: cover; /* Faz com que a imagem cubra toda a página */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+
+
+.header {
+    background-image: url('https://dmradvocacia.digital/wp-content/uploads/2024/03/crime-impacto-emocional-bullying-cyberbullying-advogado-brasilia-dmr-advocacia.png'); /* Coloque o caminho da sua imagem aqui */
+    background-size: cover; /* Faz com que a imagem cubra todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    height: 880px; /* Aumente a altura se necessário */
+    position: relative; /* Permite que o texto seja posicionado sobre a imagem */
+    color: white; /* Cor do texto */
+    display: flex; /* Usando flexbox para centralizar o texto */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor do texto */
+}
+
+.header-text {
+    position: relative; /* Necessário para o texto estar em cima da imagem */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para melhorar a legibilidade */
+}
+
+
+
+nav {
+    background-color: #ff4500;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 5px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 300px; /* Aumentando o tamanho da imagem */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+/* Centralizando o menu */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 30px; /* Aumentando o espaço entre os itens */
+}
+footer {
+    background-color: #ff6347; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
+}
+
+.footer-links {
+    display: flex; /* Usando flexbox para alinhar os links em linha */
+    justify-content: center; /* Centraliza os links */
+    gap: 20px; /* Espaçamento entre os links */
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+}
+
+.footer-links a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Destaca os links */
+    transition: color 0.3s; /* Transição suave para hover */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    color: #ffe0b2; /* Altera a cor no hover */
+}
